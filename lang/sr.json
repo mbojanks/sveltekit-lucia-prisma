@@ -12,5 +12,17 @@
   "username": "Korisničko ime",
   "password": "Lozinka",
   "alreadyhaveaccount": "Već imate nalog?",
-  "login": "Prijava"
+  "login": "Prijava",
+  "couldnotloginuser": "Nije se mogao prijaviti korisnik.",
+  "deletearticle": "Obriši članak",
+  "editarticle": "Uredi članak",
+  "newarticle": "Novi članak",
+  "content": "Sadržaj",
+  "addarticle": "Dodaj članak",
+  "home": "Početna",
+  "logout": "Odjava",
+  "couldnotcreatearticle": "Ne može se kreirati članak",
+  "invalidrequest": "Neispravan zahtev",
+  "notauth": "Niste ovlašćeni",
+  "errordeletearticle": "Nešto je pošlo naopako pri brisanju Vašeg članka"
 }
