@@ -1,18 +1,21 @@
+<script lang="ts">
+	import { i } from "@inlang/sdk-js"
+</script>
 <form method="POST">
 	<hgroup>
-		<h2>Register</h2>
-		<h3>To post articles, you'll need an account.</h3>
+		<h2>{i("register")}</h2>
+		<h3>{i("accounttopost")}</h3>
 	</hgroup>
 
-	<label for="name">Name</label>
+	<label for="name">{i("name")}</label>
 	<input type="text" id="name" name="name" required />
 
-	<label for="username">Username</label>
+	<label for="username">{i("username")}</label>
 	<input type="text" id="username" name="username" required />
 
-	<label for="password">Password</label>
+	<label for="password">{i("password")}</label>
 	<input type="password" id="password" name="password" required />
 
-	<button type="submit">Register</button>
+	<button type="submit">{i("register")}</button>
 </form>
-<p>Already have an account? <a href="/login">Login</a></p>
+<p>{i("alreadyhaveaccount")} <a href="/login">{i("login")}</a></p>

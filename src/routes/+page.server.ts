@@ -1,6 +1,7 @@
 import type { Actions, PageServerLoad } from './$types'
 import { prisma } from '$lib/server/prisma'
 import { error, fail, redirect } from '@sveltejs/kit'
+import { i } from '@inlang/sdk-js'
 
 export const load: PageServerLoad = async () => {
 	return {
@@ -30,7 +31,7 @@ export const actions: Actions = {
 			})
 		} catch (err) {
 			console.error(err)
-			return fail(500, { message: 'Could not create the article.' })
+			return fail(500, { message: i("couldnotcreatearticle") })
 		}
 
 		return {
@@ -44,7 +45,7 @@ export const actions: Actions = {
 		}
 		const id = url.searchParams.get('id')
 		if (!id) {
-			return fail(400, { message: 'Invalid request' })
+			return fail(400, { message: '{i("invalidrequest")}' })
 		}
 
 		try {
@@ -55,7 +56,7 @@ export const actions: Actions = {
 			})
 
 			if (article.userId !== user.userId) {
-				throw error(403, 'Not authorized')
+				throw error(403, i("notauth"))
 			}
 
 			await prisma.article.delete({
@@ -66,7 +67,7 @@ export const actions: Actions = {
 		} catch (err) {
 			console.error(err)
 			return fail(500, {
-				message: 'Something went wrong deleting your article'
+				message: i("errordeletearticle")
 			})
 		}
 

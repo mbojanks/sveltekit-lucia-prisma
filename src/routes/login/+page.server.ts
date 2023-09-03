@@ -22,7 +22,7 @@ export const actions: Actions = {
 			locals.auth.setSession(session)
 		} catch (err) {
 			console.error(err)
-			return fail(400, { message: 'Could not login user.' })
+			return fail(400, { message: '{i("couldnotloginuser")}' })
 		}
 		throw redirect(302, '/')
 	}

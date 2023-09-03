@@ -1,0 +1,16 @@
+{
+  "couldnotupdatearticle": "Ne može se ažurirati članak",
+  "forbiddeneditarticle": "Zabranjeno je uređivanje ovog članka.",
+  "unauth": "Nema potvrđenog korisnika",
+  "articlenotfound": "NIje pronađen članak",
+  "editing": "Uređuje se",
+  "title": "Naslov",
+  "updatearticle": "Uredi članak",
+  "register": "Registruj se",
+  "accounttopost": "Da bi postavili članke potreban Vam je nalog...",
+  "name": "Naziv",
+  "username": "Korisničko ime",
+  "password": "Lozinka",
+  "alreadyhaveaccount": "Već imate nalog?",
+  "login": "Prijava"
+}

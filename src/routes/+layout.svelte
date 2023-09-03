@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '@picocss/pico'
 	import type { PageData } from './$types'
+	import { i } from '@inlang/sdk-js'
 	export let data: PageData
 </script>
 
@@ -15,13 +16,13 @@
 		</ul>
 		<ul>
 			<form method="POST">
-				<li><a href="/">Home</a></li>
+				<li><a href="/">{i("home")}</a></li>
 				{#if !data.user}
-					<li><a href="/register">Register</a></li>
-					<li><a href="/login" role="button">Login</a></li>
+					<li><a href="/register">{i("register")}</a></li>
+					<li><a href="/login" role="button">{i("login")}</a></li>
 				{:else}
 					<li>
-						<button formaction="/logout" type="submit" role="button">Logout</button>
+						<button formaction="/logout" type="submit" role="button">{i("logout")}</button>
 					</li>
 				{/if}
 			</form>
