@@ -25,5 +25,8 @@
   "invalidrequest": "Neispravan zahtev",
   "notauth": "Niste ovlašćeni",
   "errordeletearticle": "Nešto je pošlo naopako pri brisanju Vašeg članka",
-  "articles": "Članci"
+  "articles": "Članci",
+  "couldnotregusr": "Nije moguće registrovati korisnika",
+  "welcomeback": "Dobro došli nazad!",
+  "nothaveaccount": "Nemate nalog?"
 }

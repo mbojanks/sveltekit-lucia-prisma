@@ -55,7 +55,7 @@ export const actions: Actions = {
 				}
 			})
 
-			if (article.userId !== user.userId) {
+			if (article.userId !== /*(await locals.auth.validateUser())user?*/session.userId) {
 				throw error(403, i("notauth"))
 			}
 
