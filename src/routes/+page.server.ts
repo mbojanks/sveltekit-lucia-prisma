@@ -45,7 +45,7 @@ export const actions: Actions = {
 		}
 		const id = url.searchParams.get('id')
 		if (!id) {
-			return fail(400, { message: '{i("invalidrequest")}' })
+			return fail(400, { message: i("invalidrequest") })
 		}
 
 		try {

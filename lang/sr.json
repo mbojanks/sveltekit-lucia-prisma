@@ -8,7 +8,7 @@
   "updatearticle": "Uredi članak",
   "register": "Registruj se",
   "accounttopost": "Da bi postavili članke potreban Vam je nalog...",
-  "name": "Naziv",
+  "name": "Ime i prezime",
   "username": "Korisničko ime",
   "password": "Lozinka",
   "alreadyhaveaccount": "Već imate nalog?",
@@ -24,5 +24,6 @@
   "couldnotcreatearticle": "Ne može se kreirati članak",
   "invalidrequest": "Neispravan zahtev",
   "notauth": "Niste ovlašćeni",
-  "errordeletearticle": "Nešto je pošlo naopako pri brisanju Vašeg članka"
+  "errordeletearticle": "Nešto je pošlo naopako pri brisanju Vašeg članka",
+  "articles": "Članci"
 }
